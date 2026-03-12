@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>A collection of my favorite clicks</p>
+        
+        <div class="filter-buttons">
+            <button class="btn active" onclick="filterImages('all')">All</button>
+            <button class="btn" onclick="filterImages('nature')">Nature</button>
+            <button class="btn" onclick="filterImages('tech')">Tech</button>
+            <button class="btn" onclick="filterImages('travel')">Travel</button>
+        </div>
+    </header>
+
+    <div class="gallery-container">
+        <div class="image-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05" alt="Nature 1">
+        </div>
+        <div class="image-card" data-category="tech">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Tech 1">
+        </div>
+        <div class="image-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Travel 1">
+        </div>
+        <div class="image-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Nature 2">
+        </div>
+        <div class="image-card" data-category="tech">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Tech 2">
+        </div>
+        <div class="image-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1" alt="Travel 2">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption" id="caption"></div>
+        
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="Gallery.js"></script>
+</body>
+</html>
