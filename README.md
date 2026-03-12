@@ -35,6 +35,6 @@ You can view the live version of each project by clicking the links below:
 ---
 
 ### Contact
-**Name:** Ankit pokhriyal    
+**Name:** Mayank pokhriyal    
 **Internship Provider:** CodeAlpha  
 **Role:** fronted Development Intern
